@@ -11,7 +11,7 @@ export default function Home({navigation}) {
         <View style={style.titleContainer}>
           <Text style={style.title}> Bem Vindo ao </Text>
           <Text style={style.title1}> Justa Visita </Text>
-          <Text style={style.text}> Aqui voce pode agendar sua visita de forma totalmente digital </Text>
+          <Text style={style.text}> Aqui voce pode agendar sua visita de forma totalmente digital um texto </Text>
         </View>
         <View style={style.container}>
         
