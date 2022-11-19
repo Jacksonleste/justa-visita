@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity, ImageBackground} from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground} from 'react-native'
 import style from "./style";
 
 const image = { uri: "https://i.postimg.cc/pL9xB3gv/Background.jpg" };
@@ -11,12 +11,13 @@ export default function Home({navigation}) {
         <View style={style.titleContainer}>
           <Text style={style.title}> Bem Vindo ao </Text>
           <Text style={style.title1}> Justa Visita </Text>
-          <Text style={style.text}> Aqui voce pode agendar sua visita de forma totalmente digital um texto </Text>
+          <Text style={style.text}> Aqui voce pode agendar sua visita de forma totalmente digital </Text>
         </View>
         <View style={style.container}>
         
           <TouchableOpacity
             style={style.homeButtons}
+            onPress={()=> navigation.navigate('Login')}
             >
               <Text style={style.textButton}>Login</Text>
           </TouchableOpacity>
