@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     width: 250,
     height: 50,
     marginBottom: 10,
+    marginTop: 20,
     padding: 6,
     borderRadius: 5,
     fontSize: 12,
@@ -46,14 +47,6 @@ const styles = StyleSheet.create({
     textAlign: 'center', 
     borderBottomColor: "grey",
     borderBottomWidth: 2
-  },
-  esqueceuSenhaButton:{
-    width: '70%',
-    marginTop: 5
-  },
-  esqueceuSenhaTexto:{
-    color: '#87CEFA',
-    textAlign: 'left'
   },
   button:{
     backgroundColor: "#191950",
@@ -72,10 +65,11 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   containerNav:{
+    position: 'relative',
     width:'100vw',
     height: 50,
     backgroundColor: 'black',
-    marginTop: 0
+    // marginTop: 0
   },
   buttonNav:{
     backgroundColor: 'transparent',
