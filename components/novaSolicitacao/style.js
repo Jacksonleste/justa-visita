@@ -1,0 +1,85 @@
+import {StyleSheet} from 'react-native';
+
+const styles = StyleSheet.create({
+  container:{
+    backgroundColor: '#363636',
+    width: '99vw',
+    height: '100vh',
+    flex: 1,
+    justifyContent: 'flex-start',
+    padding: 5,
+    paddingTop: 0,
+    alignItems: 'center',
+  },
+  containerNav:{
+    width:'100%',
+    height: 50,
+    backgroundColor: 'black',
+    marginTop: 0
+  },
+  buttonNav:{
+    backgroundColor: 'transparent',
+    width: 70,
+    height: 50
+  },
+  textButtonNav:{
+    color: 'white',
+    fontSize: 20
+  },
+  buttonImageIconStyle: {
+    padding: 10,
+    marginLeft: 8, 
+    height: 45, 
+    width: 45, 
+    resizeMode: 'stretch', 
+  },
+  title:{
+    color: 'white',
+    fontSize: 30,
+    paddingBottom: 5,
+    fontWeight: 'bold'
+  },
+  body:{
+    display: 'flex',
+    alignItems: 'center',
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    height: '100%',
+    width: '100vw',
+    backgroundColor: 'white',
+    padding: 10,
+    paddingTop: 30
+  },
+  input:{
+    width: 250,
+    height: 50,
+    marginBottom: 30,
+    padding: 6,
+    borderRadius: 5,
+    fontSize: 12,
+    letterSpacing: 2,
+    color: '#363636',
+    fontWeight: 'bold',
+    textAlign: 'center', 
+    borderColor: "grey",
+    borderWidth: 2
+  },
+  button:{
+    backgroundColor: "#191950",
+    justifyContent: "center",
+    alignItems: 'center',
+    width: "90%",
+    padding: 10,
+    marginLeft: 12,
+    marginTop: 20,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#363636"
+  },
+  textButton:{
+    color: "#FFF",
+    fontSize: 20,
+  },
+});
+
+export default styles;

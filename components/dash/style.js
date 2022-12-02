@@ -34,7 +34,34 @@ const styles = StyleSheet.create({
     resizeMode: 'stretch', 
   },
   table:{
-    height: '100%'
+    height: '100%',
+    width: '100vw',
+    borderRadius: '20px 20px 0 0'
+  },
+  addButton:{
+    position: 'absolute',
+    flex:0.1,
+    // left: 0,
+    right: 30,
+    bottom: 35,
+    flexDirection:'row',
+    height:60,
+    width: 60,
+    alignItems:'center',
+  },
+
+  maisIcon:{
+    width: 34,
+    height: 34
+  },
+  title:{
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 32,
+    textAlign: 'left',
+    width: '100vw',
+    paddingLeft: 20,
+    paddingBottom: 5
   }
   
 });
