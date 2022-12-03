@@ -40,7 +40,7 @@ export default function NovaSolicitacao({navigation}) {
             style={style.button}
             onPress={()=> navigation.navigate('Dash')}
             >
-              <Text style={style.textButton}>Entrar</Text>
+              <Text style={style.textButton}>Solicitar</Text>
           </TouchableOpacity>
           </View>
       </View>

@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 30,
     height: '100%',
     width: '100vw',
-    backgroundColor: 'white',
+    backgroundColor: '#696969',
     padding: 10,
     paddingTop: 30
   },
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center', 
     borderColor: "grey",
-    borderWidth: 2
+    borderWidth: 2,
+    backgroundColor: '#FFF'
   },
   button:{
     backgroundColor: "#191950",
