@@ -1,19 +1,19 @@
 import * as React from 'react';
 import {NavigationContainer ,Image, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 import style from "./style";
-
+import styleNav from "../../assets/Styles/header"
 
 export default function NovaSolicitacao({navigation}) {
   return (
       <View style={style.container}>
-        <View style={style.containerNav}>
+        <View style={styleNav.containerNav}>
             <TouchableOpacity
-                style={style.buttonNavBar}
+                style={styleNav.buttonNavBar}
                 onPress={()=> navigation.navigate('Home')}
                 >
                   <Image 
                   source={require('../../assets/back-arrow.png')}
-                  style={style.buttonImageIconStyle}
+                  style={styleNav.buttonImageIconStyle}
                 /> 
               </TouchableOpacity>
           </View>

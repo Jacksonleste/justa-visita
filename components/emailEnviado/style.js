@@ -36,16 +36,18 @@ const styles = StyleSheet.create({
   input:{
     width: 250,
     height: 50,
-    marginBottom: 10,
+    marginBottom: 30,
     padding: 6,
     borderRadius: 5,
     fontSize: 12,
     letterSpacing: 2,
-    color: 'white',
+    color: '#363636',
     fontWeight: 'bold',
     textAlign: 'center', 
-    borderBottomColor: "grey",
-    borderBottomWidth: 2
+    borderColor: "grey",
+    borderWidth: 2,
+    backgroundColor: '#FFF',
+    marginTop: 50
   },
   esqueceuSenhaButton:{
     width: '70%',
@@ -70,6 +72,23 @@ const styles = StyleSheet.create({
   textButton:{
     color: "#FFF",
     fontSize: 20,
+  },
+  messageContainer:{
+    backgroundColor: "#fff",
+    height: "65vh",
+    width: "90vw",
+    borderRadius: 20,
+    display: 'flex',
+    alignItems: 'center',
+    padding: 15
+  },
+  imageConfirm:{
+    padding: 10,
+    marginLeft: 8, 
+    height: 100, 
+    width: 100, 
+    resizeMode: 'stretch',
+    borderRadius: 10,
   }
 });
 

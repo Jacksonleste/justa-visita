@@ -3,7 +3,7 @@ import {NavigationContainer ,Image, StyleSheet, Text, View, TextInput, Touchable
 import style from "./style";
 import styleNav from "../../assets/Styles/header"
 
-export default function Login({navigation}) {
+export default function esqueciSenha({navigation}) {
   return (
       <View style={style.container}>
       <View style={styleNav.containerNav}>
@@ -14,37 +14,29 @@ export default function Login({navigation}) {
               <Image 
               source={require('../../assets/back-arrow.png')}
               style={styleNav.buttonImageIconStyle}
-            /> 
+            />
           </TouchableOpacity>
       </View>
 
         <View style={style.titleContainer}>
           <Text style={style.title}>
-            Fazer Login
+            
           </Text>
         </View>
         <View style={style.container}>
-          <TextInput
-          style={style.input}
-          placeholder="Insira seu CPF"
-          />
+          <View style={style.messageContainer}>
+            <TextInput
+            style={style.input}
+            placeholder="Email"
+            />
 
-          <TextInput
-          style={style.input}
-          placeholder="Senha"
-          />
-          <TouchableOpacity 
-          onPress={()=> navigation.navigate('EsqueciSenha')}
-          style={style.esqueceuSenhaButton}>
-            <Text style={style.esqueceuSenhaTexto}>Esqueceu a senha?</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={style.button}
-            onPress={()=> navigation.navigate('Dash')}
-            >
-              <Text style={style.textButton}>Entrar</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={style.button}
+              onPress={()=> navigation.navigate('EmailEnviado')}
+              >
+                <Text style={style.textButton}>Confirmar</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
   );

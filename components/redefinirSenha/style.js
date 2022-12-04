@@ -13,13 +13,13 @@ const styles = StyleSheet.create({
   },
   titleContainer:{
     backgroundColor: '#transparent',
-    paddingTop:80,
+    paddingTop: 80,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title:{
     color: '#FFF',
-    fontSize: 35,
+    fontSize: 30,
     fontWeight: "bold",
     fontFamily:'Helvetica',
     paddingLeft:30,

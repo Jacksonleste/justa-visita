@@ -1,19 +1,20 @@
 import * as React from 'react';
 import {ScrollView  ,Image, Text, View, TextInput, TouchableOpacity } from 'react-native'
 import style from "./style";
+import styleNav from "../../assets/Styles/header"
 
 export default function Cadastro({navigation}) {
   return (
     <ScrollView>
       <View style={style.container}>
-      <View style={style.containerNav}>
+      <View style={styleNav.containerNav}>
         <TouchableOpacity
-            style={style.buttonNavBar}
+            style={styleNav.buttonNavBar}
             onPress={()=> navigation.navigate('Home')}
             >
               <Image 
               source={require('../../assets/back-arrow.png')}
-              style={style.buttonImageIconStyle}
+              style={styleNav.buttonImageIconStyle}
             /> 
           </TouchableOpacity>
       </View>

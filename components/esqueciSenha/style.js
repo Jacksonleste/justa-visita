@@ -13,13 +13,13 @@ const styles = StyleSheet.create({
   },
   titleContainer:{
     backgroundColor: '#transparent',
-    paddingTop:80,
+    paddingTop: 80,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title:{
     color: '#FFF',
-    fontSize: 35,
+    fontSize: 30,
     fontWeight: "bold",
     fontFamily:'Helvetica',
     paddingLeft:30,
@@ -36,16 +36,17 @@ const styles = StyleSheet.create({
   input:{
     width: 250,
     height: 50,
-    marginBottom: 10,
+    marginBottom: 30,
     padding: 6,
     borderRadius: 5,
     fontSize: 12,
     letterSpacing: 2,
-    color: 'white',
+    color: '#363636',
     fontWeight: 'bold',
     textAlign: 'center', 
-    borderBottomColor: "grey",
-    borderBottomWidth: 2
+    borderColor: "grey",
+    borderWidth: 2,
+    backgroundColor: '#FFF'
   },
   esqueceuSenhaButton:{
     width: '70%',
@@ -70,6 +71,16 @@ const styles = StyleSheet.create({
   textButton:{
     color: "#FFF",
     fontSize: 20,
+  },
+  messageContainer:{
+    backgroundColor: "#fff",
+    height: "65vh",
+    width: "90vw",
+    borderRadius: 20,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 15
   }
 });
 

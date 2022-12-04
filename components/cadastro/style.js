@@ -63,29 +63,6 @@ const styles = StyleSheet.create({
   textButton:{
     color: "#FFF",
     fontSize: 20,
-  },
-  containerNav:{
-    position: 'relative',
-    width:'100vw',
-    height: 50,
-    backgroundColor: 'black',
-    // marginTop: 0
-  },
-  buttonNav:{
-    backgroundColor: 'transparent',
-    width: 70,
-    height: 50
-  },
-  textButtonNav:{
-    color: 'white',
-    fontSize: 20
-  },
-  buttonImageIconStyle: {
-    padding: 10,
-    marginLeft: 8, 
-    height: 45, 
-    width: 45, 
-    resizeMode: 'stretch', 
   }
 });
 

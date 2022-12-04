@@ -11,28 +11,6 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     alignItems: 'flex-end',
   },
-  containerNav:{
-    width:'100vw',
-    height: 50,
-    backgroundColor: 'black',
-    marginTop: 0
-  },
-  buttonNav:{
-    backgroundColor: 'transparent',
-    width: 70,
-    height: 50
-  },
-  textButtonNav:{
-    color: 'white',
-    fontSize: 20
-  },
-  buttonImageIconStyle: {
-    padding: 10,
-    marginLeft: 8, 
-    height: 45, 
-    width: 45, 
-    resizeMode: 'stretch', 
-  },
   table:{
     height: '100%',
     width: '100vw',
