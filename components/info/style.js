@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
     padding: 5,
     paddingTop: 0,
     alignItems: 'flex-end',
+    position: "fixed",
+    top: 50
   },
   table:{
     height: '100%',

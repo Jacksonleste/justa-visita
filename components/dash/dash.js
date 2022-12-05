@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from "react";
 import {NavigationContainer ,Image, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 import style from "./style";
 import styleNav from "../../assets/Styles/header"
@@ -14,6 +14,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 import Fab from '@mui/material/Fab';
+import Info from '../info/info'
 
 // import InfoIcon from '@mui/icons-material';
 
@@ -39,23 +40,37 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 function createData(nome, data, horario, info) {
-  return { nome, data, horario, info };
+  return { nome, data, horario, info};
 }
 
 const rows = [
-  createData('Fulano 1', '12/12/2022', '16:00', 0),
-  createData('Fulano 1', '12/12/2022', '16:00', 0),
-  createData('Fulano 1', '12/12/2022', '16:00', 0),
-  createData('Fulano 1', '12/12/2022', '16:00', 0)
+  createData('Luiz inácio', '12/12/2022', '16:00'),
+  createData('Bonie', '12/12/2022', '16:00'),
+  createData('Cleyde', '12/12/2022', '16:00'),
+  createData('Fulano', '12/12/2022', '16:00')
 ];
 
+
+
 export default function Dash({navigation}) {
+  const [visible, setVisible] = useState(false);
+  const [obj, setObj] = useState(null);
+  function verInfo(obj){
+  setObj(obj)
+  setVisible(true)
+  console.log('teste')
+}
+
   return (
       <View style={style.container}>
       <View style={styleNav.containerNav}>
         <TouchableOpacity
             style={styleNav.buttonNavBar}
-            onPress={()=> navigation.navigate('Home')}
+            onPress={()=> {if(visible){
+              setVisible(false);
+            }else{
+              navigation.navigate('Home');
+            }}}
             >
               <Image 
               source={require('../../assets/back-arrow.png')}
@@ -84,7 +99,14 @@ export default function Dash({navigation}) {
                 </StyledTableCell>
                 <StyledTableCell align="right">{row.data}</StyledTableCell>
                 <StyledTableCell align="right">{row.horario}</StyledTableCell>
-                <StyledTableCell align="right">{row.info}</StyledTableCell>
+                <StyledTableCell align="right">
+                  <TouchableOpacity onPress={ ()=> verInfo(row)}>
+                    <Image 
+                      source={require('../../assets/info.png')}
+                      style={style.infoImage}
+                      />
+                  </TouchableOpacity>
+                </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
@@ -95,6 +117,8 @@ export default function Dash({navigation}) {
         </Fab>
       </TouchableOpacity>
       </TableContainer>
+
+      <Info visible={visible} obj={obj}></Info>
         
     </View>
   );
