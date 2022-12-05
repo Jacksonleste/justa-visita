@@ -72,6 +72,8 @@ export default function Cadastro({navigation}) {
 
           <TouchableOpacity
             style={style.button}
+          onPress={()=> navigation.navigate('Dash')}
+
             >
               <Text style={style.textButton}>
                 Cadastrar Perfil
