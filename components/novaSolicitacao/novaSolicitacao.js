@@ -17,23 +17,28 @@ export default function NovaSolicitacao({navigation}) {
                 /> 
               </TouchableOpacity>
           </View>
-          <Text style={style.title}>Nova Solicitacao</Text>
+          <Text style={style.title}>Nova Solicitação</Text>
           <View style={style.body}>
            <TextInput
           style={style.input}
-          placeholder="Nome do Detento"
+          placeholder="Nome do Presidiário"
           />
            <TextInput
           style={style.input}
-          placeholder="CPF"
+          placeholder="CPFdo Presidiário"
           />
            <TextInput
           style={style.input}
-          placeholder="Data de Nascimento"
+          placeholder="Data Nas. do Presidiário"
           />
-           <TextInput
+          <TextInput
           style={style.input}
           placeholder="Data da visita"
+          />
+
+           <TextInput
+          style={style.input}
+          placeholder="Horário de preferência"
           />
           
           <TouchableOpacity

@@ -11,9 +11,11 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     alignItems: 'flex-end',
     position: "fixed",
-    top: 50
   },
   body:{
+    paddingTop: 100,
+    display: 'flex',
+    alignItems: 'center',
     height: '100%',
     width: '100vw',
     left: 10,
@@ -30,27 +32,36 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingBottom: 5
   },
-  infoName:{
-    color: '#000',
-    marginTop: 25,
-    paddingLeft: 10,
-    marginBottom: 5
-  },
-  info:{
-    padding: 10,
+  input:{
+    width: 250,
+    height: 50,
+    marginBottom: 30,
+    padding: 6,
     borderRadius: 5,
-    display: 'flex',
-    alignContent: 'center',
-    backgroundColor: "#fff"
+    fontSize: 12,
+    letterSpacing: 2,
+    color: '#363636',
+    fontWeight: 'bold',
+    textAlign: 'center', 
+    borderColor: "grey",
+    borderWidth: 2,
+    backgroundColor: '#FFF'
   },
-  image:{
-    padding: 2,
-    marginLeft: 8, 
-    height: 25, 
-    width: 25,
-    marginRight: 10, 
-    resizeMode: 'stretch',
-    borderRadius: 10
+  button:{
+    backgroundColor: "#191950",
+    justifyContent: "center",
+    alignItems: 'center',
+    width: "90%",
+    padding: 10,
+    marginLeft: 12,
+    marginTop: 20,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#363636"
+  },
+  textButton:{
+    color: "#FFF",
+    fontSize: 20,
   }
 });
 

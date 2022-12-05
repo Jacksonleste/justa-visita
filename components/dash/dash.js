@@ -39,15 +39,15 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(nome, data, horario, info) {
-  return { nome, data, horario, info};
+function createData(nome, data, horario, situacao, numReg) {
+  return { nome, data, horario, situacao, numReg};
 }
 
 const rows = [
-  createData('Luiz inácio', '12/12/2022', '16:00'),
-  createData('Bonie', '12/12/2022', '16:00'),
-  createData('Cleyde', '12/12/2022', '16:00'),
-  createData('Fulano', '12/12/2022', '16:00')
+  createData('Luiz inácio', '12/12/2022', '16:00', 0, 13131323),
+  createData('Bonie', '12/12/2022', '16:00', 1, 154577),
+  createData('Cleyde', '12/12/2022', '16:00', 2, 2123156),
+  createData('Fulano', '12/12/2022', '16:00', 0, 897546)
 ];
 
 
@@ -78,8 +78,23 @@ export default function Dash({navigation}) {
             /> 
           </TouchableOpacity>
       </View>
+      <View style={styleNav.containerNav2}>
+        <TouchableOpacity
+            style={styleNav.buttonNavBar}
+            onPress={()=> {if(visible){
+              setVisible(false);
+            }else{
+              navigation.navigate('Profile');
+            }}}
+            >
+              <Image 
+              source={require('../../assets/profile.png')}
+              style={styleNav.buttonImageIconStyle}
+            /> 
+          </TouchableOpacity>
+      </View>
 
-      <Text style={style.title}>Solicitacoes</Text>
+      <Text style={style.title}>Suas Solicitacões</Text>
 
         <TableContainer component={Paper} style={style.table}>
         <Table sx={{ minWidth: '100vw'}} aria-label="customized table">

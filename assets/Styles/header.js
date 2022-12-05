@@ -2,10 +2,21 @@ import {StyleSheet} from 'react-native';
 
 const styleNav = StyleSheet.create({
   containerNav:{
+    display: 'flex',
     position: 'relative',
     width:'100vw',
     height: 50,
     backgroundColor: '#0d0025',
+    // marginTop: 0
+  },
+  containerNav2:{
+    display: 'flex',
+    position: 'fixed',
+    alignItems: 'flex-end',
+    width:'50vw',
+    height: 50,
+    backgroundColor: 'transparent',
+    paddingRight: 10
     // marginTop: 0
   },
   buttonNav:{

@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     alignItems: 'flex-end',
     position: "fixed",
-    top: 50
   },
   body:{
     height: '100%',
@@ -30,6 +29,19 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingBottom: 5
   },
+  imageContainer:{
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center'
+  },
+  profileImage:{
+    padding: 10,
+    marginLeft: 8, 
+    height: 150, 
+    width: 150, 
+    resizeMode: 'stretch',
+    borderRadius: 10
+  },
   infoName:{
     color: '#000',
     marginTop: 25,
@@ -43,14 +55,21 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     backgroundColor: "#fff"
   },
-  image:{
-    padding: 2,
-    marginLeft: 8, 
-    height: 25, 
-    width: 25,
-    marginRight: 10, 
-    resizeMode: 'stretch',
-    borderRadius: 10
+  button:{
+    backgroundColor: "#191950",
+    justifyContent: "center",
+    alignItems: 'center',
+    width: "90%",
+    padding: 10,
+    marginLeft: 12,
+    marginTop: 20,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#363636"
+  },
+  textButton:{
+    color: "#FFF",
+    fontSize: 20,
   }
 });
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {NavigationContainer ,Image, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 import style from "./style";
-import styleNav from "../../assets/Styles/header"
+import styleNav from "../../assets/Styles/header";
 
 export default function Login({navigation}) {
   return (
